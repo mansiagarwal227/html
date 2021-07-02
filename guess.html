@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Enter a Number</p>
+        <input id="num" type="number">
+        <button onclick="check()" >enter</button>
+       <p id="demo"></p>
+        <script>
+            function check()
+        {
+        var x = document.getElementById("num").value;
+            var y= Math.floor(Math.random()*100)+1;
+            
+            if(x==y)
+            {
+                document.getElementById("demo").innerHTML+="</br>You guess the number correct";
+                
+            }
+            else if(x<y)
+            {                
+                document.getElementById("demo").innerHTML+="</br>You guess the number lesser";
+                
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML+="</br>You guess the number bigger";
+              
+            } 
+        }
+
+        
+        </script>
+        </body>
+        </html>
