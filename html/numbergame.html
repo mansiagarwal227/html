@@ -1,0 +1,88 @@
+<!-- Number Guessing Game HTML -->
+<html>
+	<head>
+		<title> Number Guess</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+		<style>body {
+            margin: 10px;
+            background-color:slategray;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+            background-image:url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=");
+        }
+        
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid darkcyan;
+}.button1:hover {
+  background-color:darkcyan;
+  color: white;
+}
+        
+        #head {
+            background-color:darkcyan;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 3px;
+            border-color:black;
+            padding: 10px;
+            padding-left: 25%;
+        }
+        
+        .Area {
+            font-size: 120%;
+            background-color:darkgray;
+            text-align: center;
+        }
+        .center {
+  text-align: center;
+  border: 3px solid black;
+  height: 70px;
+}
+        #footer {
+            text-align: center;
+            margin-top:5px;
+            font-size: 32px;
+            font-style: italic;
+            color: cornsilk;
+            
+            
+        }
+        </style>
+        <script src="numbergame.js"></script>
+	</head>
+	<body>
+		<div id="head">
+			<h1>Number Guessing Game</h1></div>
+			<div id="middle" class="Area">
+				<p><b>Enter a number between 1 and 100</b> </p>
+			</div>
+            <div class="center buttonarea">
+			<input type="number" id="userGuess"/>
+		   <button id="buttonArea" class="button button1"><b>
+				Guess</b></button></div>
+			
+			<div id="footer">
+				<h2>Your Previous Guesses</h2>
+				<ol id="List">
+				</ol>
+			</div>
+			
+		
+	</body>
+</html>
