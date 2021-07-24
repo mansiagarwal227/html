@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">
+              LET ME LOVE YOU
+            </h2>
+            <h3 id="artist">
+                JUSTIN BEIBER
+            </h3>
+            <div class="img-container">
+                <img id="img" src="C:\Users\magarwal\Desktop\typescript\image\song1.jpg" alt=" ">
+                <audio id="audio" src="C:\Users\magarwal\Desktop\typescript\music\song1.mp3"></audio>
+            <div style="padding-top: 2rem;">                <input type="range" id="songSlider" class="song_slider" min="0" step="1" onchange="searchSong()" /></div>
+
+                <div>
+                    <div id="currentDuration" class="current_duration">00:00</div>
+                </div>
+                <!----controls-->
+                <div class="music_controls">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play main_button" id="play" title="Play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                </div>
+           
+        
+        <div class="volume-container">
+            <input type="range" id="volumeSlider" class="volume_slider" min="0" max="1" step="0.02"
+                onchange="manageVolume()" />
+                <i class="fas fa-volume-up" onclick="muteUnmute();"></i> 
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
