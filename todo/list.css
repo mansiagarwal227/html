@@ -1,0 +1,103 @@
+html,
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-image:url("https://previews.123rf.com/images/vasyll/vasyll1705/vasyll170500155/78396120-clear-list-of-color-paper-with-pin-on-the-grey-background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: center; 
+  }
+  .top{
+    background:thistle;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .top .inputField{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+  .inputField input{
+    width: 85%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding-left: 15px;
+  }
+  .inputField button{
+    width: 50px;
+    height: 100%;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    background: red;
+    cursor: pointer;
+    border-radius: 3px;
+    pointer-events: none;
+   
+  }
+  .inputField button.active{
+    pointer-events: auto;
+  }
+  .top .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .todoList li{
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+  }
+  .todoList li .icon{
+    position: absolute;
+    right: -45px;
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius:5px;
+    cursor: pointer;
+  }
+  .todoList li:hover .icon{
+    right: 0px;
+  }
+  .top .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background:red;
+    cursor: pointer;
+  }
+  .footer button.active{
+   
+    pointer-events: auto;}
