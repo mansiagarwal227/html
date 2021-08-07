@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+  
+}
+    </style>
+
+<body>
+    
+   
+<main>
+    <div class="header">
+        COVID DETAILS
+    </div>
+     <div id="chartdiv"></div>
+    <div class="body">
+        <select id="country-filter">
+        </select>
+        <br>
+        <h1>select country <br></h1>
+    </div>
+    <div class ="tble"><table id="data" style="width:100%" ></table></div>
+   
+</main>
+</body>
+</html>
